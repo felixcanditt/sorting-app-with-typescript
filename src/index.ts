@@ -1,5 +1,7 @@
 class Sorter {
   constructor(public collection: number[] | string) {}
+  // why is union type bad here? 
+  // because wed need to update the potential types every time something new is added
 
   sort(): void {
     const { length } = this.collection;
@@ -12,6 +14,10 @@ class Sorter {
             this.collection[j] = this.collection[j + 1];
             this.collection[j + 1] = leftHand;
           }
+        }
+
+        if (typeof this.collection === 'string') {
+          this.collection.
         }
       }
     }
