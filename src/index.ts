@@ -11,12 +11,10 @@ const charactersCollection = new CharactersCollection('Xajgjj');
 charactersCollection.sort();
 console.log(charactersCollection.myData);
 
-// const linkedList = new LinkedList();
-// linkedList.add(500);
-// linkedList.add(-10);
-// linkedList.add(7);
-// linkedList.add(1000);
-
-// const sorter = new Sorter(linkedList);
-// sorter.sort();
-// linkedList.print();
+const linkedList = new LinkedList();
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(7);
+linkedList.add(1000);
+linkedList.sort();
+linkedList.print();
