@@ -5,15 +5,16 @@ export interface Sortable {
 }
 
 export class Sorter {
-  constructor(public collection: Sortable) {}
-
   sort(): void {
-    const { length } = this.collection;
+    // error messages in lines 10, 14, 15:
+    // TS doesnt recognize that these properties will eventually be used in NumbersCollection where these props are available
+    // thats why TS throws errors
+    const { length } = this;
 
     for (let i = 0; i < length; i++) {
       for (let j = 0; j < length - i - 1; j++) {
-        if (this.collection.compare(j, j + 1)) {
-          this.collection.swap(j, j + 1);
+        if (this.compare(j, j + 1)) {
+          this.swap(j, j + 1);
         }
       }
     }
