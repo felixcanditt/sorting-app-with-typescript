@@ -4,11 +4,12 @@ export interface Sortable {
   swap(leftIndex: number, rightIndex: number): void;
 }
 
-export class Sorter {
+export abstract class Sorter {
+  abstract compare(leftIndex: number, rightIndex: number): boolean;
+  abstract swap(leftIndex: number, rightIndex: number): void;
+  abstract length: number;
+
   sort(): void {
-    // error messages in lines 10, 14, 15:
-    // TS doesnt recognize that these properties will eventually be used in NumbersCollection where these props are available
-    // thats why TS throws errors
     const { length } = this;
 
     for (let i = 0; i < length; i++) {
