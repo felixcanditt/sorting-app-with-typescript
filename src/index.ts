@@ -7,10 +7,9 @@ const numbersCollection = new NumbersCollection([1, 388, -5, 0]);
 numbersCollection.sort();
 console.log(1, numbersCollection.myData);
 
-// const charactersCollection = new CharactersCollection('Xajgjj');
-// const sorter = new Sorter(charactersCollection);
-// sorter.sort();
-// console.log(charactersCollection.myData);
+const charactersCollection = new CharactersCollection('Xajgjj');
+charactersCollection.sort();
+console.log(charactersCollection.myData);
 
 // const linkedList = new LinkedList();
 // linkedList.add(500);

@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const NumbersCollection_1 = require("./NumbersCollection");
+const CharactersCollection_1 = require("./CharactersCollection");
 const numbersCollection = new NumbersCollection_1.NumbersCollection([1, 388, -5, 0]);
 numbersCollection.sort();
 console.log(1, numbersCollection.myData);
-// const charactersCollection = new CharactersCollection('Xajgjj');
-// const sorter = new Sorter(charactersCollection);
-// sorter.sort();
-// console.log(charactersCollection.myData);
+const charactersCollection = new CharactersCollection_1.CharactersCollection('Xajgjj');
+charactersCollection.sort();
+console.log(charactersCollection.myData);
 // const linkedList = new LinkedList();
 // linkedList.add(500);
 // linkedList.add(-10);
